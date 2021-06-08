@@ -1,4 +1,4 @@
-module github.com/jeffotoni/app.fileserver/go1.15/statik
+module github.com/jeffotoni/app.fileserver/go1.15
 
 go 1.15
 

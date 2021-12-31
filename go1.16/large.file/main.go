@@ -7,11 +7,11 @@ import (
 	"time"
 )
 
+//go:embed funcionario.json
+var f embed.FS
+
 func main() {
 	start := time.Now()
-
-	//go:embed funcionario.json
-	var f embed.FS
 
 	// exemplo usando ReadFile
 	// data, _ := f.ReadFile("funcionario.json")

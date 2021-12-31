@@ -33,6 +33,7 @@ func main() {
 	mux.Handle("/",
 		http.StripPrefix("/", http.FileServer(statikFS)))
 	mux.HandleFunc("/api/ping", Ping)
+  log.Println("Run server :8085")
 	http.ListenAndServe(":8085", mux)
 }
 
